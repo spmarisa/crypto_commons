@@ -1,5 +1,5 @@
 ## [Unreleased]
 
-## [0.0.0] - 2021-12-21
+## [0.0.1] - 2021-12-21
 
-- Initial release
+- Added some util methods to get publickey, address, wif of a given private key.
