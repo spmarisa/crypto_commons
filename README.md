@@ -22,7 +22,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+require "crypto_commons"
+> private_key can be any number between 0 and 2^256-1
+
+private_key = 1729
+
+> 02e670a0fb3a0c86f053523afb819b8944dc4013e9fd500371b1efe23e1f110637
+
+public_key = CryptoCommons.public_key(private_key)
+
+> f395247d6151b3f86049bb87aeb33da61e649920
+
+public_key_160 = CryptoCommons.public_key_hash160(private_key)
+
+> 1PCwsDm7qXL8ojaUdqiXhGnFFS62n2aZTP
+
+address = CryptoCommons.address(private_key)
+
+## What's next?
+
+-> Support algorithms other than ECDSA
 
 ## Development
 
